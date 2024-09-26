@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    background-image: url("../resources/loginIMG.jpg"); 
+    background-repeat: no-repeat;
+    background-position: 28% 50%;
+}
+
+header {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea; /* Light grey background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /*
+    background-color: lightgrey; 
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.logo-header {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: start;
+}
+
+header h1 {
+    text-align: left;
+    color: rgb(67, 15, 24); /* Deep red for the title */
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.logo-header {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+nav {
+    /*
+    background-color: rgb(67, 15, 24);
+    color: #fff;
+    padding: 10px;*/
+    display: flex;
+}
+nav a {
+    color: rgb(67, 15, 24); /* Echoing the title color for design consistency */
+    text-decoration: none;
+    margin-left: 20px; /* Space between navigation links */
+    padding: 5px 10px;
+    transition: color 0.3s, border-bottom 0.3s;
+    /*
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;*/
+}
+nav a:hover {
+    /*
+    text-decoration: underline; */
+    color: #000000; /* Dark color for hover effect */
+    border-bottom: 2px solid rgb(67, 15, 24);
+}
+
+.form {
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    
+}
+
+p.section_header {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+p.required {
+    color: red;
+}
+
+p.section_description {
+    text-align: center;
+}
+
+label.error {
+    color: red;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+
+input[type="submit"] {
+    background-color: rgb(67, 15, 24);
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: gray;
+}
+
+footer  {
+    background-color: rgb(67, 15, 24);
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    display:block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+}
+
+footer p.college {
+    padding-left: 30px;
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+footer p.address {
+    padding-left: 30px;
+    padding-bottom: 30px;
+    
+}
+
+textarea {
+    width: calc(100% - 22px);
+    height: 150px;
+}

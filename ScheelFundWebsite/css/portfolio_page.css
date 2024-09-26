@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea; /* Light grey background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /*
+    background-color: lightgrey; 
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.logo-header {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: start;
+}
+
+header h1 {
+    text-align: left;
+    color: rgb(67, 15, 24); /* Deep red for the title */
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.logo-header {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+nav {
+    /*
+    background-color: rgb(67, 15, 24);
+    color: #fff;
+    padding: 10px;*/
+    display: flex;
+}
+nav a {
+    color: rgb(67, 15, 24); /* Echoing the title color for design consistency */
+    text-decoration: none;
+    margin-left: 20px; /* Space between navigation links */
+    padding: 5px 10px;
+    transition: color 0.3s, border-bottom 0.3s;
+    /*
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;*/
+}
+nav a:hover {
+    /*
+    text-decoration: underline; */
+    color: #000000; /* Dark color for hover effect */
+    border-bottom: 2px solid rgb(67, 15, 24);
+}
+
+nav1 {
+    display: block;
+    margin-bottom: 100px;
+}
+
+nav1 a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 5%;
+    background-color: rgb(67, 15, 24);
+    padding: 10px;
+}
+
+nav1 a:hover {
+    text-decoration: underline;
+}
+
+footer  {
+    background-color: rgb(67, 15, 24);
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    display:block;  
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+}
+
+footer p.college {
+    padding-left: 30px;
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+footer p.address {
+    padding-left: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.manager-LOGIN-link {
+    text-decoration: none;
+    text-align: right;
+    position: right;
+    padding-left: 90%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.growthPortfolio, .valuePortfolio {
+    display: flex;
+    flex-direction: column;
+    width: 62%;
+    height: 700px;
+}
+
+.economicCalendar, .topStories {
+    width: 35%;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 350;
+
+}
+
+h2 {
+    padding-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 350;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buy-button, .sell-button {
+    display: none; /* originally hidden */
+    background-color: green; /* red for sell-button */
+    color: white;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+.sell-button {
+    background-color: red;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Center the modal */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 50%; /* Adjust the width as necessary */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style for labels and inputs */
+label, input, select {
+    display: block; /* Make them block level elements */
+    margin: 10px 10px; /* Add some margin */
+}
+
+input, select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input, select, #submit-button {
+    width: 100%; /* Adjust the width to fit within the modal */
+    margin: 0 auto; /* Center align within the modal */
+}
+
+#submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #45a049;
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 350;
+}
+
+footer nav a {
+    color: white; /* Echoing the title color for design consistency */
+    text-decoration: none;
+    margin-left: 20px; /* Space between navigation links */
+    padding: 5px 10px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+footer nav a:hover {
+    color: white; /* Dark color for hover effect */
+    text-decoration: underline;
+    text-decoration-color: white;
+}
